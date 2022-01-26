@@ -1,0 +1,7 @@
+{
+  "name": "zapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
