@@ -7,7 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: '',
     component: TabsPage,
     children: [
       {
@@ -17,6 +17,10 @@ const routes: Routes = [
       {
         path: 'food',
         loadChildren: async () => import('../../pages/food/food.module').then(f => f.FoodPageModule)
+      },
+      {
+        path: 'locator',
+        loadChildren: async () => import('../../pages/locator/locator.module').then(l => l.LocatorPageModule)
       },
       {
         path: '',

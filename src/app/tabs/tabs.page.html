@@ -1,13 +1,18 @@
 <ion-tabs>
   <ion-tab-bar slot="bottom">
       <ion-tab-button tab="food">
-          <ion-icon name="beer-outline"></ion-icon>
+          <ion-icon [src]="fishIcon"></ion-icon>
           <ion-label>Cibo</ion-label>
       </ion-tab-button>
 
       <ion-tab-button tab="zorro">
-          <ion-icon name="navigate-circle-outline"></ion-icon>
+          <ion-icon [src]="catIcon"></ion-icon>
           <ion-label>Zorro</ion-label>
       </ion-tab-button>
+
+      <ion-tab-button tab="locator">
+        <ion-icon name="navigate"></ion-icon>
+        <ion-label>Trovami</ion-label>
+    </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>

@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TabsPage implements OnInit {
 
+  protected catIcon = '../../assets/icon/cat-solid.svg';
+  protected fishIcon = '../../assets/icon/fish-solid.svg';
+
   constructor() { }
 
   ngOnInit() {
