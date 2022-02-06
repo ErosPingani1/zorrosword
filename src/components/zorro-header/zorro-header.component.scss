@@ -1,0 +1,7 @@
+.z-header {
+    @apply h-2/5 rounded-b-lg bg-zinc-900;
+
+    .z-title {
+        @apply text-slate-100 text-5xl font-semibold pt-14;
+    }
+}

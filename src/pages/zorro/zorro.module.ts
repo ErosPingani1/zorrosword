@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ZorroPageRoutingModule } from './zorro-routing.module';
 
 import { ZorroPage } from './zorro.page';
+import { ZorroHeaderComponent } from 'src/components/zorro-header/zorro-header.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,12 @@ import { ZorroPage } from './zorro.page';
     IonicModule,
     ZorroPageRoutingModule
   ],
-  declarations: [ZorroPage]
+  declarations: [
+    ZorroPage,
+    ZorroHeaderComponent
+  ],
+  entryComponents: [
+    ZorroHeaderComponent
+  ]
 })
 export class ZorroPageModule {}
