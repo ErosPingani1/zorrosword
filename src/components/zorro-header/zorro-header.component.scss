@@ -1,7 +1,45 @@
 .z-header {
-    @apply h-2/5 rounded-b-lg bg-zinc-900;
+    @apply h-2/5 rounded-b-lg bg-[#f7f7f7] dark:bg-[#1f1f1f];
 
-    .z-title {
-        @apply text-slate-100 text-5xl font-semibold pt-14;
+    .z-cat {
+        @apply absolute h-56 right-0 z-10;
+    }
+
+    .z-header-content {
+        @apply mx-6;
+
+        .z-title {
+            @apply text-5xl font-bodoni pt-14 text-gray-700 dark:text-slate-100;
+        }
+
+        .z-info {
+            --ion-item-background: transparent;
+            @apply pt-4;
+
+            .item {
+                --padding-start: 0;
+                --inner-padding-end: 0;
+                --border-style: none;
+
+                ion-icon {
+                    @apply text-gray-700 dark:text-[#f7f7f7];
+                }
+
+                p {
+                    @apply text-gray-700 dark:text-[#f7f7f7] font-bodoni text-xl pt-2 pl-3;
+
+                    &.date {
+                        @apply text-lg;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-height: 740px) {
+
+        .z-header-content>.z-info {
+            @apply pt-0;
+        }
     }
 }

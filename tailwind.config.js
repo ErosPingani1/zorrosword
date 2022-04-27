@@ -4,6 +4,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'bodoni': ['Libre Bodoni', 'serif']
+    }
   },
   plugins: [
     require('@tailwindcss/aspect-ratio'),
